@@ -29,3 +29,9 @@ p <- murders %>%
       
 p
 
+
+murders %>% 
+  ggplot(aes(population, total)) +
+  geom_label(aes(label = abb))
+as.tib
+  

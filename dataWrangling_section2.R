@@ -59,6 +59,11 @@ df <- AwardsPlayers %>%
 df$playerID %>%
   intersect(top_names$playerID)
 
+df$playerID %>%
+  setdiff(top_names$playerID) %>%
+  length()
+
+
 ## Web scraping section
 install.packages("rvest")
 library(rvest)
